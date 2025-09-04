@@ -1,6 +1,6 @@
 // Configuración de Supabase - CAMBIAR POR TUS CREDENCIALES
-const SUPABASE_URL = 'https://tuproyecto.supabase.co'; // Reemplaza con tu URL
-const SUPABASE_ANON_KEY = 'tu_clave_anonima_aqui'; // Reemplaza con tu clave anónima
+const SUPABASE_URL = 'https://wcocmlzsswqktwutvgbi.supabase.co'; // Reemplaza con tu URL
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indjb2NtbHpzc3dxa3R3dXR2Z2JpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTcwMTY5MTQsImV4cCI6MjA3MjU5MjkxNH0.6bmAtE19L9aNR4ZnnB9sGrJL8eAgn6vP4aRRIDhv1XE'; // Reemplaza con tu clave anónima
 
 // Inicializar cliente de Supabase
 const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
@@ -188,3 +188,4 @@ document.addEventListener("DOMContentLoaded", () => {
     // Probar conexión al cargar la página
     probarConexion();
 });
+
