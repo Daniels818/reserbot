@@ -1,0 +1,27 @@
+/* Fondo general de la página */
+body {
+    background-image: url("fondo.jpg"); /* tu imagen debe estar en la misma carpeta */
+    background-size: cover;             /* ajusta la imagen al tamaño de la pantalla */
+    background-repeat: no-repeat;       /* evita que se repita */
+    background-attachment: fixed;       /* fondo fijo aunque hagas scroll */
+    background-position: center;        /* centra la imagen */
+    font-family: Arial, sans-serif;
+    color: white;                       /* texto blanco para que contraste */
+    text-align: center;
+    padding: 50px;
+  }
+  
+  /* Opcional: estilo al formulario */
+  form {
+    background-color: rgba(0, 0, 0, 0.6); /* fondo negro semi-transparente */
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+  }
+input, select, button { margin: 10px 0; padding: 8px; width: 90%; }
+button { background: #d0d2d7; color: rgb(148, 20, 20); border: none; border-radius: 5px; cursor: pointer; }
+button:hover { background: #bec4d3; }
+#mensaje {
+    margin-top: 15px ;
+    font-weight: bold;
+}

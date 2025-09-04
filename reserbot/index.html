@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>ReserBOT - Reservar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>ReserBOT - Hacer una reserva</h1>
+  <form id="formReserva" action="guardar.php" method="POST">
+    <input type="text" name="nombre" placeholder="Nombre del cliente" required><br>
+    <input type="date" name="fecha" required><br>
+    <input type="time" name="hora" required><br>
+    <select name="servicio" required>
+      <option value="">Selecciona un servicio</option>
+      <option>Restaurante</option>
+      <option>Hotel</option>
+      <option>Barbería</option>
+    </select><br>
+    <button type="submit">Reservar</button>
+  </form>
+
+
+  
+  <a href="listar.php">Ver reservas</a>
+
+  <script> src="script.js"</script>
+</body>
+</html>
