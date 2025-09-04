@@ -2,28 +2,63 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ReserBOT - Reservar</title>
   <link rel="stylesheet" href="style.css">
+  
+  <!-- CDN de Supabase -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
 <body>
-  <h1>ReserBOT - Hacer una reserva</h1>
-  <form id="formReserva" action="guardar.php" method="POST">
-    <input type="text" name="nombre" placeholder="Nombre del cliente" required><br>
-    <input type="date" name="fecha" required><br>
-    <input type="time" name="hora" required><br>
-    <select name="servicio" required>
-      <option value="">Selecciona un servicio</option>
-      <option>Restaurante</option>
-      <option>Hotel</option>
-      <option>Barbería</option>
-    </select><br>
-    <button type="submit">Reservar</button>
-  </form>
+  <div class="container">
+    <h1>ReserBOT - Hacer una reserva</h1>
+    
+    <!-- Formulario actualizado (sin action y method PHP) -->
+    <form id="formReserva">
+      <div class="form-group">
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre del cliente" required>
+      </div>
+      
+      <div class="form-group">
+        <input type="date" name="fecha" id="fecha" required>
+      </div>
+      
+      <div class="form-group">
+        <input type="time" name="hora" id="hora" required>
+      </div>
+      
+      <div class="form-group">
+        <select name="servicio" id="servicio" required>
+          <option value="">Selecciona un servicio</option>
+          <option value="Restaurante">Restaurante</option>
+          <option value="Hotel">Hotel</option>
+          <option value="Barbería">Barbería</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <button type="submit">Reservar</button>
+      </div>
+    </form>
 
+    <!-- Contenedor para mensajes -->
+    <div id="mensaje" style="display: none;"></div>
 
-  
-  <a href="listar.php">Ver reservas</a>
+    <!-- Sección para ver reservas -->
+    <div class="reservas-section">
+      <h2>Reservas Registradas</h2>
+      <div id="listaReservas">
+        <p>Cargando reservas...</p>
+      </div>
+    </div>
 
-  <script> src="script.js"</script>
+    <!-- Botón para recargar reservas -->
+    <div class="actions">
+      <button onclick="location.reload()" class="btn-secondary">Actualizar Reservas</button>
+    </div>
+  </div>
+
+  <!-- Script actualizado (corregido) -->
+  <script src="script.js"></script>
 </body>
 </html>
