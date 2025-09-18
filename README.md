@@ -1,2 +1,0 @@
-# reserbot
-Proyecto de reservas
